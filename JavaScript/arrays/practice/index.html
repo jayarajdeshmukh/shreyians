@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+     let fruits = ["mango","banana","chiku"];
+     // write this in console = fruits[1];
+
+     // Q2 ans.
+    fruits.push("jackfruit");
+    fruits.unshift("pineapple");
+
+    // Q3 ans.
+    fruits.splice(2,1,"kiwi")
+
+     // Q4 ans.
+     let numbers = [1,2,3,4];
+     numbers.pop();
+
+     // Q5 ans.
+     let colors = ["Green", "Yellow"];
+     colors.splice(1,0,"Red","Blue");
+
+     // Q6 ans.
+     let item = [1,2,3,4,5,6];
+     let newItem = item.slice(1,4);
+     console.log(newItem)
+
+     // Q7 ans.   if your write only sort it will automatically in alphabetical order
+     let names = ["Zara","Arjun","Mira","Bhavya"];
+     let newNames =  names.sort().reverse()
+
+      // Q8 ans. 
+    let no = [1,2,3,4];
+    let squareno = no.map(function(val){
+        return val * val
+     })  
+
+      // Q9 ans.
+       let aray = [5,11,6,17,9];
+       let newaray = aray.filter(function(val){
+         return val > 10;
+       })
+
+      // Q10 ans.
+      let ary = [10,20,30];
+      let newary = ary.reduce(function(acc,value){
+        return acc + value
+      },0); 
+
+      // Q11. ans
+       let arey = [12,15,3,8,20];
+        let newarey = arey.find(function(val){
+            return val < 10
+        })
+
+        // Q12 ans
+         let score = [45,60,28,90];
+         let newscore = score.some(function(val){
+            return val < 35 
+         })
+
+         // Q13 ans.
+          let eve = [2,4,6,8,10];
+          let neweve = eve.every(function(val){
+            return val%2 == 0;
+          })
+
+          // Q14 ans.
+           let fullName= ["Jay" ,"Deshmukh"]
+           let [firstName, lastName] = fullName;
+           console.log(firstName)
+           console.log(lastName)
+
+           // Q15 spread operator(...)
+           let a = [1,2]
+           let b = [3,4]
+
+           let c = [...a, ...b];
+
+           // Q16 ans.
+            let countries = ["UK","USA","Russia"]
+            countries = ["India", ...countries]
+
+           // Q17. ans.
+           let num = [1,2,3];
+           let newnum = [...num]
+
+    </script>
+</head>
+<body>
+    Q1. Create an array with 3 fruits and print the second fruit 
+<br>   
+    Q2. Add "jackfruit" at the end and "pineapple" at the beginning of this array
+<br>  
+    Q3. Replace "banana" with "kiwi" in the above array.
+<br>   
+    Q4. Remove the last item from this array using method:
+       numbers = [1,2,3,4]
+<br>   
+    Q5. Insert "red" and "blue" at index 1 in this array
+       colors = ["Green","Yellow"]
+<br>   
+    Q6. Extract only the middle 3 elements from this array
+        item = [1,2,3,4,5,6]
+<br>
+    Q7. Sort this array alphabetically and then reverse it:
+        names = ["Zara","Arjun","Mira","Bhavya"]
+<br>
+    Q8. Use .map() to square each number:
+        let no = [1,2,3,4]        
+<br>
+    Q9. Use .filter() to keep numbers greater than 10
+        let aray = [5,10,30,7,9];
+<br>
+   Q10. Use .reduce() to find the sum of this arrays
+        let ary = [10,20,30];
+<br>
+    Q11. Use .find() to get the first number less than 10;
+       let arey = [12,15,3,8,20];
+<br>
+    Q12. Use .some() to check if any student has scored below 35
+        let score = [45,60,28,90];
+<br>
+    Q13. Use .every() to check if all numbers are even
+      let eve = [2,4,6,8,10]
+ <br>
+    Q14.  Destructure this array to get firstName and LastName
+       let fullName= ["Jay" ,"Deshmukh"]
+<br>
+    Q15. Merge 2 arrays using spread operator
+       let a = [1,2]
+       let b = [3,4]
+<br>
+   Q16. Add "India" to the start of this array using spread
+       let countries = ["UK","USA","Russia"]
+<br>
+   Q17. Clone this array properly (not by reference)
+    let num = [1,2,3]
+
+</body>
+</html>

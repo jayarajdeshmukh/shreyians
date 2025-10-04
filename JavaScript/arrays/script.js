@@ -48,4 +48,41 @@
     return a-b;
   }) 
 
+  // for each 
+  let arrayss=[2,5,3,8,10];
+  arrayss.forEach(function (val){
+    console.log(val + 5);
+  })
 
+  // map = map sirf tab use krna hai jab aapko ek naya array banana hai pichle array ke data ke basis par
+   let pqr = [2,5,3,7,4];
+   let newpqr = pqr.map(function(val){
+    return 12;
+   })
+
+   // filter = 
+   let kjh = [1,2,3,4,5,6,7,8];
+   let newkjh = kjh.filter(function(val){
+    if(val>4) return true
+   })
+
+   // reduce = reduces value in a single value
+   let fgh = [1,2,3,4,5,6];
+   let ans = fgh.reduce(function(accumulator, val){
+       return accumulator + val;
+   },0)
+
+   // some = it will print true or false
+   let rty = [30,4,80,96,52,30];
+   let any = rty.some(function(val){
+    return val>90;
+   })
+
+   // every  = 
+   let eve = [9,30,25,62,42];
+   let neweve = eve.every(function(val){
+    return val>10;
+   })
+
+
+   
