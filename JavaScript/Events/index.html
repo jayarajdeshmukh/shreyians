@@ -1,0 +1,148 @@
+<!-- 
+   We use events to make webpages interactive.
+   common events = click,dblclick, mouseover,submit,change, input
+1. Select the paragraph first 
+      like this: let p = document.querySelector("P")
+     2.   element.addEventListener("event name", function(){
+          element.style.color="red";
+       })
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Event Handling</title>
+    <style>
+      /* *{
+        
+        margin: 0;
+      }
+        #main{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          background-color: #222;
+          width: 100%;
+          height: 100%;
+        }
+        h1{
+          color: #555;
+          font-size: 10rem;
+          user-select: none;
+        }
+        input{
+          display: none;
+        }
+        #btn{
+          background-color: rgb(48, 168, 48);
+          padding: 12px 22px;
+          color: white;
+          font-weight: 600;
+          border-radius: 5px;
+        }
+        #main #btn:hover{
+          background-color: rgb(19, 78, 19);
+        } */
+
+        /* Submit event */
+/* Form submit  */
+ *{
+  margin: 0;
+  padding: 0;
+ }
+ html,body{
+  width: 100%;
+  height: 100%;
+ }
+   #main{
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+   }
+   form input{
+    display: block;
+     margin-bottom: 10px; 
+     padding: 7px;
+
+  }
+  .card{
+    padding: 20px;
+    display: block;
+    margin-top: 40px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    max-width: 500px;
+    color: white;
+  }
+  .profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .profile img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+  }
+  .card p{
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .card h5{
+    margin-top: 3px;
+  }
+
+</style>
+</head>
+<body>
+  <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+  <h1>Hello Wolrd</h1>
+
+  <input type="text">
+
+
+  // change event
+  <h2 id="device">Select device</h2>
+   <select>
+     <option selected disabled>Choose Device</option>
+     <option value="Apple">iphone</option>
+     <option value="Xiomi">Mi</option>
+     <option value="Redmi">redmi123</option>
+   </select> 
+
+   <div id="main">
+    <h1>A</h1> 
+       <input type="file" id="fileinp">
+       <div id="btn">
+           Upload file
+       </div>
+   </div>
+      <h1>Submit Event</h1>
+    <form id="myForm">
+      <label> Enter your name</label>
+      <input type="text" id="name">
+      <button type="submit">Submit</button>
+    </form>
+   --> 
+
+   <!-- Form Submit -->
+  <div id="main">
+      <form action="">
+       <input type="text" placeholder="Profile pic">
+       <input type="text" placeholder="Name">
+       <input type="text" placeholder="Age">
+       <input type="text" placeholder="Email">
+       <input type="submit">
+     </form>
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

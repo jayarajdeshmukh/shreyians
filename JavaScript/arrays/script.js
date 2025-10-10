@@ -56,7 +56,7 @@
 
   // map = map sirf tab use krna hai jab aapko ek naya array banana hai pichle array ke data ke basis par
    let pqr = [2,5,3,7,4];
-   let newpqr = pqr.map(function(val){
+   let newpqr = pqr.map(function(){
     return 12;
    })
 

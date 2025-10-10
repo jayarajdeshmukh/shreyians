@@ -51,7 +51,7 @@
 
     
     // Closures and lexical scoping
-    // ek fnc jo return ek aur fnc aur return hone waala fnc humesha use karega parent fnc ka koi variable
+    // Closures = ek fnc jo return ek aur fnc aur return hone waala fnc humesha use karega parent fnc ka koi variable
     function parent(){
       let a=2;               // this is variable
        return function(){
