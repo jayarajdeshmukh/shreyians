@@ -2,8 +2,8 @@
  // syntax = let arr = [];
 
  // modify array (replace index)
- let arr=[1,2,3];
- arr[2] = 12;
+ let arr=[1,2,3,4];
+ arr[2] = 12;  // 1,2,12,4
 
  /* Array Methods
   1. Push (add at end)
@@ -82,6 +82,18 @@
    let eve = [9,30,25,62,42];
    let neweve = eve.every(function(val){
     return val>10;
+   })
+
+   // find
+   let jhi = [8,65,25,45,0.2,10.25]
+   let newjhi = jhi.find(function(val){
+     return val<10
+   })
+
+   // use .some() to check if any student has scored below 35
+   let stud = [45,60,28,90]
+   let newstud =  stud.some(function(val){
+    return val <= 35
    })
 
 

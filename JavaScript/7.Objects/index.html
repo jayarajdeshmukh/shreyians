@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+   /* syntax 
+     let obj = {
+
+     }
+*/
+
+   let obj = {
+    name:"Jay",
+    age:24,
+    email: "jayarajdeshmukh@gmail.com"
+   }
+  //  obj.age
+
+  let objects = {
+    name:"Jayaraj",         // name,age,city,pin, etc this all are keys
+    age:24,                  // key can be a number or boolean also
+    address: {
+        city:"pune",
+        pin:41562,
+          location : {
+            latitude:23.55,
+            longitude: 525.52
+          }
+       }
+    }
+  // type in console  objects.address.location.latitude
+  
+  // print key
+  for(let key in objects){
+    console.log(key)
+  }
+
+  // if you want to copy the object you can use JSON.stringify
+  let obj2 = JSON.parse(JSON.stringify(objects));
+     
+
+
+
+
+    </script>
+</head>
+<body>
+    
+
+</body>
+</html>

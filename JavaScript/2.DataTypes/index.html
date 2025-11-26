@@ -6,7 +6,9 @@
     2. Non-primitive or reference
     => arrays, objects, functions. 
       if you copy you will not get real copy but you will get reference
-
+     
+      0 = falsy
+      1 = truthy
 -->
 
 <!DOCTYPE html>
@@ -15,6 +17,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataTypes</title>
+    <script>
+      let a = "Jay" // string
+      let b = 25;   // number
+      let isJay = true; //boolean 
+      let c = NaN;  // NaN  = type is Number 
+      let d;    // undefined  = When a variable is declared but not assigned a value
+
+      let y = 0;
+      if(y){
+        console.log("Truthy")
+      }else{
+        console.log("Falsy")
+      }
+
+
+    </script>
 </head>
 <body>
     

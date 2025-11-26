@@ -5,11 +5,13 @@
      dance("ghoda");
      dance("hiran");
 
-
+    
      function add(a, b){   // a,b are parameters
         console.log(a+b);
      }
      add(2,3)     // 2,3 are arguments
+
+
 
      // Default parameters  = give values inside parameters is called default parameters
      function add(a=1,b=5){
@@ -17,7 +19,8 @@
      }
      add()
 
-     // rest or spread
+
+     // rest or spread = collect multiple values into a single array or object.
      function abcd(...val){
         console.log(val)
      }
@@ -36,7 +39,6 @@
     }
     let v1 = xyz(13)
     console.log(v1);
-
 
     // pure vs impure functions
     // aisa fnc jo ki baahar ki value ko naa badle wo hai pure fnc
@@ -58,20 +60,23 @@
          console.log(a);
        }
     }
+   const child = parent();  // inner function return hua
+   child();
 
     // lexical scopping = function inside function inside function
     // functions can access can access only inside fnc curly braces
-    function abcd(){
+    function abd(){
       let a = 2;
       function def(){
          let b = 3;
          function ghi(){
-            let c = 5;
+           let c = 5;
          }
+        }
       }
-    }
 
-    // hoisting 
+
+    // hoisting = moving declarations to the top of the scope
     abcd();
 
 
@@ -81,5 +86,50 @@
     }
 
 
+    // Use rest parameter to accept any number of scores and return the total
+    function getScore(...score){
+          let total = 0;
+          score.forEach(function(val){
+            total = total + val
+          })
+          return total;
+    }
+   console.log(getScore(10,20,45,2)) 
 
+   // pass a function into another function and execute it inside
+   function jhi(val){
+      val();
+   }
+    jhi(function (){
+      console.log("Hello")
+    });
     
+
+    // What is higher order function = ek aisa function jo return karein ek aur function
+    /*  map()
+        filter() // in array only true conditions will return
+        reduce()
+        foreach()
+        setTimeout()
+    */
+
+        // map() example
+        let num = [1,2,3,4]
+        let double = num.map(function(no){
+           return no*2
+        })
+        console.log(double)
+
+        // filter() array me se sirf true condition wale elements ko return karta hai.
+       let numo = [45,52,35,94,77];
+       let greater = numo.filter(function(n){
+        return n > 50
+       })
+       console.log(greater)
+
+       // reduce() saare values ko single result me convert karta hai
+       let numbe = [2,5,7,3,4];
+       let sumnum = numbe.reduce(function(total , n){
+         return total + n
+       })
+       console.log(sumnum)
