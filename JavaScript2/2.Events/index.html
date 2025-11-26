@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Event Handling</title>
+    <style>
+      body{
+        text-transform: capitalize;
+      }
+      .form{
+        background: black;
+        color: white;
+         display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
+      form{
+        display: flex;
+       flex-direction: column;
+       gap: 10px;
+      }
+      #abcd{
+         background: rebeccapurple;
+         height: 400px;
+         width: 400px;
+      }
+    </style>
+</head>
+<body>
+   <!-- Event is used to make pages interactive
+      click,dblclick, input, change,submit, mousehover,keyup
+      1. first select the tag
+      2. add addEventListener
+      eg. let h1= document.querySelector("h1");
+         h1.addEventListner("event", function(){
+           h1.style.color = "green"
+         })
+     -->
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+     <!-- input -->
+     <input type="text" placeholder="">
+<br>
+
+     <!-- change event tab chalta hai jab aapkabkoi input select ya textarea mein koi change ho jaye  -->
+     <h3 id="device">select your device</h3>
+     <select>
+        <option selected disabled>Choose your device</option>
+        <option value="samsung">Samsung</option>
+        <option value="mi">Xiomi</option>
+        <option value="iphone">Apple</option>
+        <option value="oppo">oppo</option>
+     </select>
+
+     <!-- 2nd example -->
+     <h2>Your favourite Cricketer</h2>
+    <select id="selected">
+       <option disabled selected>Choose your favourite Cricketer</option>
+       <option value="Dhoni">Mahendra Singh Dhoni</option>
+       <option value="Jaddeja">Ravindra Jadeja</option>
+       <option value="Virat">Virat Kohli</option>
+       <option value="Dubey">Shivam Dubey</option>
+    </select>
+<br><br>
+
+    <!-- submit -->
+   <div class="form">
+      <form action="">
+         <input type="text"placeholder= "name">
+         <input type="text" placeholder="age">
+         <input type="text" placeholder="email">
+         <input type="text"placeholder= "profile pic">
+         <input type="submit">
+      </form>
+      <div class="card">
+         <div class="profile">
+           <img src="" alt="">
+         </div>
+         <h3>Jay Deshmukh</h3>
+         <h5>React JS developer</h5>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea id perferendis laborum. Nobis necessitatibus sunt ipsum dolorum quisquam, magnam aliquam nulla. Porro, tenetur.</p>
+      </div>
+   </div>
+<br><br>
+
+   <!-- Mouse Hover -->
+    <div id="abcd"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

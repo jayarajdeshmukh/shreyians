@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timers and Intervals</title>
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.glass-card{
+  width: 320px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  text-align: center;
+  color: #fff;
+}
+
+.glass-card h2{
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.progress-container{
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar{
+  width: 15%;       /* Change this manually to show different download % */
+  height: 100%;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.percent{
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+<!--  setTimeOut 
+     syntax:   setTimeout(function(){
+                  console.log("Hello")
+               },5000)  // 5secs      
+   
+
+    setInterval = repeat the code again and again every 5secs
+             setInterval(function(){
+                  console.log("Hello")
+               },5000)  // 5secs
+     
+    clearTimeOut : it will clear after 3sec
+          let tm = setTimeout(function(){
+              console.log("Hello")
+         },3000)
+         clearTimeout(tm);
+   -->
+
+    <div class="glass-card"> 
+       <h2>Downloading...</h2>
+        
+       <div class="progress-container">
+          <div class="progress-bar"></div>
+       </div>
+
+       <div class="percent">0%</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

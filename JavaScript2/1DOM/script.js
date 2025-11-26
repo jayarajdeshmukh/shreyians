@@ -31,3 +31,24 @@ for(let i = 0; i<list.length; i++){
 // select a paragraph and replcae its content with <b>Updated<b/>
 let para = document.querySelector("p")
 para.innerHTML = "<b>Updated<b/> by Javascript"
+
+// how do you get the src of an image using JS
+let img = document.querySelector("img")
+ console.log(img.getAttribute("src"))
+// or
+ console.log(img.src)
+
+ // what does setAttribute() do?
+ // => it will change the attribute
+ document.querySelector("img").setAttribute("src", "https://images.unsplash.com/photo-1763688496557-46d22a1fbe47?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8")
+
+ // select a link and update its href to print to https://sheryians.com
+ let b = document.querySelector(".link")
+ b.href = "https://www.sheryians.com/"
+
+ // add a title attribute to a div dynamically
+document.querySelector("div").setAttribute("title","hover")
+
+// remove the disabled attribute from a button
+let btn = document.querySelector("button")
+btn.removeAttribute("disabled")
