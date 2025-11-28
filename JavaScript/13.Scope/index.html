@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCOPE</title>
+    <style>
+#toast {
+  visibility: hidden;
+  min-width: 200px;
+  background: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+
+</head>
+<body>
+    <!-- SCOPE
+       1. functional scope = function ke andar hi use ho sakti hai
+       2. global scope  = poore code mein kahi bhi use ho skti hai
+       3. block scope = {} curly mein hi use ho sakti hai
+   
+      js - lexical scoping used
+        dynamic scoping
+
+        closures 
+        => ek fnc jo return kare ek aur fnc aur return hone wala fnc use karega parent fnc ka koi variable
+      -->
+
+      <!-- Toster = small popup notification -->
+    <div id="toast">This is a toast message!</div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

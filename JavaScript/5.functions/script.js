@@ -106,7 +106,7 @@
     
 
     // What is higher order function = ek aisa function jo return karein ek aur function
-    /*  map()
+    /*  map() //“Take every item (from array), do something with it, and return a new array.”
         filter() // in array only true conditions will return
         reduce()
         foreach()

@@ -12,12 +12,19 @@
   4. unshift (add first)
   5. splice  (remove from middle)
   6. slice (main array does not change . The new array will change)
-  7. reverse 
-  8. sort 
-*9. map
-*10. filter
-*11. reduce
-  */
+  7. reverse (reverse the array)
+  8. sort = a-b assending order, b-a = descending order
+  9. for each= when we want to run some code for every element of an array, but we don’t need to return a new array.
+*10. map = map sirf tab use krna hai jab aapko ek naya array banana hai pichle array ke data ke basis par
+*11. filter = “Array me se sirf required items ko choose karna.”
+*12. reduce = reduces an array into single value
+ 13. some = it will print true or false (“Array me at least 1 element aisa hai kya jo condition pass kare?”)
+ 14. every  = “Array me sabhi elements condition pass kar rahe hain kya?”
+             true → if all elements match the condition
+             false → if any one element fails the condition
+ 15. find = “Jo element sabse pehle condition pass kare, bas woh de do.” 
+            Stops searching as soon as it finds the first match (fast)
+*/
 
   let array = [1,2,3];     //Push = 700 will add at end of array
   array.push(700);  
@@ -48,7 +55,7 @@
     return a-b;
   }) 
 
-  // for each 
+  // for each= when we want to run some code for every element of an array, but we don’t need to return a new array.
   let arrayss=[2,5,3,8,10];
   arrayss.forEach(function (val){
     console.log(val + 5);
@@ -59,8 +66,9 @@
    let newpqr = pqr.map(function(){
     return 12;
    })
+ console.log(newpqr);
 
-   // filter = 
+   // filter = “Array me se sirf required items ko choose karna.”
    let kjh = [1,2,3,4,5,6,7,8];
    let newkjh = kjh.filter(function(val){
     if(val>4) return true
@@ -72,19 +80,31 @@
        return accumulator + val;
    },0)
 
-   // some = it will print true or false
+   // some = it will print true or false (“Array me at least 1 element aisa hai kya jo condition pass kare?”)
    let rty = [30,4,80,96,52,30];
    let any = rty.some(function(val){
     return val>90;
    })
 
-   // every  = 
+   // every  = “Array me sabhi elements condition pass kar rahe hain kya?”
+   // true → if all elements match the condition
+  // false → if any one element fails the condition
    let eve = [9,30,25,62,42];
    let neweve = eve.every(function(val){
     return val>10;
    })
 
-   // find
+   /*
+    | Method       | Returns      | When to Use                               
+| ------------ | ------------ | ----------------------------------------- |
+| **some()**   | true / false | Check if at least **one** element matches |
+| **every()**  | true / false | Check if **all** elements match           |
+| **filter()** | new array    | Get **all matching elements**             |
+ 
+   */
+
+   // find = “Jo element sabse pehle condition pass kare, bas woh de do.” 
+            //Stops searching as soon as it finds the first match (fast)
    let jhi = [8,65,25,45,0.2,10.25]
    let newjhi = jhi.find(function(val){
      return val<10
